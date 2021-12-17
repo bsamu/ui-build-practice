@@ -1,44 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-  
-    background: transparent;
-  
-    font-family: inherit;
-    
-    text-decoration: none;
-  }
-  
-  ol, ul, li {
-    list-style:none;
-    display:block;
-  }
-  
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
-  
-  a img {
-    border: none
-  }
-  
-  button, a {
-    cursor: pointer;
-    color: inherit
-  }
-  
-  textarea {
-    resize: none
-  }
-  
-  button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0
-  }
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-  /* end of css reset */
+body {
+  background-color: #F7E4D4;
+}
+
+body, input, textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* end of css reset */
+form {
+  width: 100%;
+  max-width: 520px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+h1, button {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: #467745;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 521px) {
+  h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+}
+
+input[type="text"] {
+  height: 64px;
+}
+
+textarea {
+  height: 120px;
+  padding-top: 20px;
+  resize: none;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border: none;
+}
+
+button {
+  display: block;
+  width: 280px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+/*# sourceMappingURL=style.css.map */
